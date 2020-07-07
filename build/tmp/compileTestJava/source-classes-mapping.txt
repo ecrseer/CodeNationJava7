@@ -1,4 +1,2 @@
 challenge/EstacionamentoTest.java
  challenge.EstacionamentoTest
-challenge/EstacionamentoSubmissionTest.java
- challenge.EstacionamentoSubmissionTest

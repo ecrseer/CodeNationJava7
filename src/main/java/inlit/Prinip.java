@@ -22,10 +22,10 @@ public class Prinip {
                     .withNome(nms[cnt-54])
                     .withHabilitacao("NaoVazia")
                     .withPontos(19)
-                    .withIdade(cnt);
+                    .withIdade(cnt+4);
             Carro.CarroBuilder alugou = Carro.builder()
                     .withMotorista(detran.build())
-                    .withCor(Cor.BRANCO)
+                    .withCor(Cor.COLORIDO)
                     .withPlaca("Placoso")
                     ;
 
@@ -38,7 +38,10 @@ public class Prinip {
 
         Estacionamento instaceano = new Estacionamento();
         for(int i=0; i<=3;i++)
-            instaceano.estacionar(parqueadero.get(i));
+           instaceano.estacionar(parqueadero.get(i));
+
+       // Carro carro = Carro.builder().withCor(Cor.COLORIDO).withPlaca("123").build();
+        //instaceano.estacionar(carro);
 
         System.out.println(instaceano.Araimai().toString());
 
