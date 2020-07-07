@@ -9,15 +9,15 @@ public class Estacionamento {
 
     public void estacionar(Carro carro) {
         if (carro==null || carro.getMotorista() == null||
-                carro.getMotorista().getPontos() > 20||carro.getMotorista().getIdade() <= 18
+                carro.getMotorista().getPontos()>=20 || carro.getMotorista().getIdade() <= 18
         ) {
             throw new EstacionamentoException("Não pode carro autonomo!");
         }
-        if(carro.getCor()==null ||carro.getPlaca()==null||carro.getPlaca().equals("")||
+        /*if(carro.getCor()==null ||carro.getPlaca()==null||carro.getPlaca().equals("")||
         carro.getMotorista().getHabilitacao()==null||carro.getMotorista().getNome().equals("")||carro.getMotorista().getNome()==null
         ){
             throw new NullPointerException("Dados inválidos");
-        }
+        }*/
 
         if (carro.getMotorista().getNome().isEmpty()
                 || carro.getMotorista().getPontos()<=0
@@ -29,7 +29,7 @@ public class Estacionamento {
 
         int rng=0;
         boolean brigadeiro = false;
-        if(carrosEstacionados()>=3) {
+        if(carrosEstacionados()>=10) {
             for (Carro coche : parqueadero) {
                 if (coche.getMotorista().getIdade() < 55) {
                     parqueadero.remove(rng);

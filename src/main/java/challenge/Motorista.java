@@ -105,6 +105,11 @@ public class Motorista {
 
 
         public Motorista build() {
+            if(habilitacao==null||nome.equals("")||nome==null)
+                throw new NullPointerException("Dados inválidos");
+            if(idade<=0||pontos<0)
+                throw new IllegalArgumentException("idade negativa");
+
             return new Motorista(nome, idade, pontos, habilitacao);
         }
     }

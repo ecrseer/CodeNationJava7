@@ -40,8 +40,13 @@ public class Prinip {
         for(int i=0; i<=3;i++)
            instaceano.estacionar(parqueadero.get(i));
 
-       // Carro carro = Carro.builder().withCor(Cor.COLORIDO).withPlaca("123").build();
-        //instaceano.estacionar(carro);
+        Motorista motorista = Motorista.builder().withNome("Ada")
+                .withIdade(25)
+                .withPontos(10)
+                .withHabilitacao("1231")
+                .build();
+        Carro carro = Carro.builder().withCor(Cor.BRANCO).withPlaca("123").withMotorista(motorista).build();
+        instaceano.estacionar(carro);
 
         System.out.println(instaceano.Araimai().toString());
 

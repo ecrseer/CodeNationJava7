@@ -88,6 +88,10 @@ public class Carro {
         }
 
         public Carro build() {
+            if(cor==null ||placa==null||placa.equals(""))
+                throw new NullPointerException("Dados inválidos");
+
+
             return new Carro(motorista, placa, cor);
         }
     }
