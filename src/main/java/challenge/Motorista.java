@@ -89,11 +89,16 @@ public class Motorista {
         }
 
         public MotoristaBuilder withIdade(int idade) {
+            if(idade<=0)
+                throw new IllegalArgumentException("idade negativa");
             this.idade = idade;
             return this;
         }
 
         public MotoristaBuilder withPontos(int pontos) {
+            if(pontos<0)
+                throw new IllegalArgumentException("pontos negativa");
+
             this.pontos = pontos;
             return this;
         }

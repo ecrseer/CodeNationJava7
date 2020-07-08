@@ -54,8 +54,11 @@ public class Estacionamento {
 
     public boolean carroEstacionado(Carro carro) {
 
-
-        return true;
+        for (Carro coche : parqueadero) {
+            if(coche.equals(carro))
+                return true;
+        }
+        return false;
     }
 
     public List<Carro> Araimai(){

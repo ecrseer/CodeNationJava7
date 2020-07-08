@@ -2,15 +2,13 @@ challenge/Cor.java
  challenge.Cor
 challenge/EstacionamentoException.java
  challenge.EstacionamentoException
-inlit/Prinip.java
- inlit.Prinip
-challenge/Estacionamento.java
- challenge.Estacionamento
-challenge/Carro.java
- challenge.Carro
- challenge.Carro$1
- challenge.Carro$CarroBuilder
 challenge/Motorista.java
  challenge.Motorista
  challenge.Motorista$1
  challenge.Motorista$MotoristaBuilder
+challenge/Carro.java
+ challenge.Carro
+ challenge.Carro$1
+ challenge.Carro$CarroBuilder
+challenge/Estacionamento.java
+ challenge.Estacionamento
